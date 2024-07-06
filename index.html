@@ -1,1 +1,22 @@
-<h1>Hello<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Image Viewer</title>
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+</head>
+<body>
+    <div id="vrview"></div>
+    <script>
+        window.addEventListener('load', function() {
+            VRView.Player('#vrview', {
+                image: 'https://github.dev/tinahanchen/360images/blob/main/Pano.jpg',
+                width: '100%',
+                height: 500
+            });
+        });
+    </script>
+</body>
+</html>
+
